@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="fahad.js"></script>
+    <link rel="stylesheet" href="fahad.css" />
+    <title>Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- NAVBAR -->
+        <h1>Portfolio.</h1>
+        <div class="menu_icons">
+          <input type="checkbox" id="check" />
+          <label for="check">
+            <img src="images/menu.png" alt="menu" class="nav_icon menu_icon" />
+            <img
+              src="images/close.png"
+              alt="close"
+              class="nav_icon close_icon"
+            />
+          </label>
+        </div>
+      </nav>
+      <div class="video_container">
+        <video autoplay muted loop id="background-video">
+          <source src="video/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <!-- MENU LIST -->
+    <div class="menu_list">
+      <ul>
+        <li>
+          <a href="#home"
+            ><img
+              src="images/home.png"
+              alt="home"
+              class="list_icons home_icon"
+            /><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a href="#about"
+            ><img
+              src="images/user.png"
+              alt="user"
+              class="list_icons user_icon"
+            /><span>About</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="images/portfolio.png"
+              alt="portfolio"
+              class="list_icons portfolio_icon"
+            /><span>Portfolio</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="images/blog.png"
+              alt="blog"
+              class="list_icons blog_icon"
+            /><span>Blog</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="images/contact.png"
+              alt="contact"
+              class="list_icons contact_icon"
+            /><span>Contact</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Box -->
+    <input type="checkbox" id="icons" />
+    <label for="icons" class="label">
+      <i class="bx bxs-right-arrow-square"></i>
+      <i class="bx bxs-left-arrow-square"></i>
+    </label>
+    <div class="card">
+      <a href="#"
+        ><div class="box box1">
+          <span class="icon"><i class="bx bxl-instagram"></i></span></div
+      ></a>
+      <a href="#"
+        ><div class="box box2">
+          <span class="icon"><i class="bx bxl-facebook"></i></span></div
+      ></a>
+      <a href="#"
+        ><div class="box box3">
+          <span class="icon"><i class="bx bxl-linkedin"></i></span></div
+      ></a>
+      <a href="#"
+        ><div class="box box4">
+          <span class="icon"><i class="bx bxl-twitter"></i></span></div
+      ></a>
+    </div>
+    <section class="home" id="home">
+      <div class="intro">
+        <h1>Fahad Ikram</h1>
+        <h2>
+          I'm
+          <span style="--i: 4" data-text="Data Scientist">Data Scientist</span>
+          <span style="--i: 3" data-text="ML Engineer">ML Engineer</span>
+          <span style="--i: 2" data-text="Web Developer">Web Developer</span>
+          <span style="--i: 1" data-text="Data Analyst">Data Analyst</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit,
+          itaque nulla quae corrupti ipsum dolore. Repellendus nostrum nesciunt
+          error sapiente repudiandae delectus inventore!
+        </p>
+      </div>
+      <div class="image"><img src="images/fahad.png" alt="my_image" /></div>
+    </section>
+    <section
+      class="about"
+      id="about"
+      style="width: 100%; height: 800px; background-color: red"
+    ></section>
+  </body>
+</html>

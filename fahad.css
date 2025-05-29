@@ -55,7 +55,7 @@ nav {
   justify-content: space-between;
   padding: 3px 50px;
   width: 100%;
-  z-index: 10;
+  z-index: 3;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.105);
 }
@@ -126,6 +126,7 @@ h1 {
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
+  z-index: 4;
 }
 .menu_list.visible {
   height: 300px;
@@ -228,14 +229,14 @@ h1 {
   transition-delay: 1.6s;
 }
 
-.card {
+/* .card {
   position: absolute;
   bottom: 0%;
   width: 200px;
   height: 200px;
   overflow: hidden;
   transition: all 1s ease-in-out;
-  z-index: 1;
+  z-index: 3;
 }
 .box {
   position: absolute;
@@ -378,7 +379,7 @@ label .bxs-left-arrow-square {
 #icons:checked ~ .card {
   transform: translateX(0%);
   opacity: 1;
-}
+} */
 /* HOME SECTION */
 .home {
   position: absolute;
@@ -390,7 +391,7 @@ label .bxs-left-arrow-square {
   justify-content: space-evenly;
   width: 100%;
   height: 100vh;
-  z-index: -1;
+  z-index: 2;
 }
 .home > div {
   width: 50%;
@@ -465,4 +466,19 @@ label .bxs-left-arrow-square {
     transform: translateY(0px);
     box-shadow: 0 0 30px #00ffee;
   }
+}
+
+.social-media-icons {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+.social-media-icons a {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
